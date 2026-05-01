@@ -237,46 +237,6 @@ CA-MORL System
 
 ---
 
-## 📖 Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@inproceedings{mahpara2026camorl,
-  title     = {Carbon-Aware Multi-Objective Reinforcement Learning
-               for Sustainable Data Center Cooling Optimization},
-  author    = {Mahpara, Afia and Dina, Rebeka Sultana and Mahmud, Zaber},
-  booktitle = {IEEE International Conference on Signal Processing,
-               Information, Communication and Systems (SPICSCON)},
-  year      = {2026},
-  address   = {BAUET, Natore, Bangladesh}
-}
-```
-
----
-
-## 📚 References
-
-- Lazic et al., "Simulator-based RL for Data Center Cooling," OpenReview, 2018
-- Schulman et al., "Proximal Policy Optimization Algorithms," arXiv:1707.06347, 2017
-- Wang et al., "Multi-Objective Low-Carbon Scheduling via Ensemble RL," IEEE Trans. Smart Grid, 2025
-- ASHRAE TC9.9, "Thermal Guidelines for Data Processing Environments," 4th ed., 2015
-- Jiménez-Raboso et al., "Sinergym: A Building Simulation Framework for RL," BuildSys, 2021
-
----
-
-## 👥 Team
-
-| Name | ID | Contribution |
-|---|---|---|
-| Rebeka Sultana Dina | 2022-3-60-027 | 45% |
-| Afia Mahpara | 2023-2-60-011 | 30% |
-| Zaber Mahmud | 2022-3-60-077 | 25% |
-
-**Course:** CSE 407 — Green Computing · Section 03 · Group 06
-**Supervisor:** Ahmed Abdal Shafi Rasel, Lecturer, Dept. of CSE, East West University
-
----
 
 ## 📄 License
 
