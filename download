@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large output files
+checkpoints/
+logs/reward_curves/
+*.pt
+*.pth
+
+# Keep these in logs/
+!logs/weight_sweep_results_corrected.csv
+!logs/aggregated_results.csv
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# EnergyPlus temp files
+*.epw
+*.idf
+*.err
+*.eso
+*.audit
+Eplus-*/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+paper/*.pdf

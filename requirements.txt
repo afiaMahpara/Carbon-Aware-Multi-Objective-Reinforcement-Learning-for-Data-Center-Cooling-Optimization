@@ -1,0 +1,23 @@
+# CA-MORL Requirements
+# Install with: pip install -r requirements.txt
+
+# Core ML
+torch>=2.0.0
+numpy>=1.24.0
+
+# Data & Analysis
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Notebook
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Optional: Real EnergyPlus simulation
+# Uncomment below if you have Sinergym installed
+# sinergym[extra]>=2.5.0
+# gymnasium>=0.28.0
