@@ -20,7 +20,7 @@ This repository contains the official implementation of **CA-MORL**, submitted t
 
 > **Paper title:** Carbon-Aware Multi-Objective Reinforcement Learning for Sustainable Data Center Cooling Optimization
 >
-> **Authors:** Afia Mahpara · Rebeka Sultana Dina · Zaber Mahmud
+> **Authors:** Afia Mahpara · Rebeka Sultana Dina 
 >
 > **Institution:** Department of Computer Science and Engineering, East West University, Dhaka, Bangladesh
 
@@ -28,26 +28,26 @@ Most existing RL approaches for data center cooling optimize **only for energy**
 
 ---
 
-## 🏗️ Repository Structure
+##  Repository Structure
 
 ```
 CA-MORL/
 │
-├── 📄 README.md                          ← You are here
-├── 📄 requirements.txt                   ← All dependencies
-├── 📄 LICENSE                            ← MIT License
+├──  README.md                          ← You are here
+├──  requirements.txt                   ← All dependencies
+├──  LICENSE                            ← MIT License
 │
-├── 🐍 environment.py                     ← CA-MORL environment wrapper
+├──  environment.py                     ← CA-MORL environment wrapper
 │                                            (synthetic fallback + Sinergym adapter)
 │                                            (CarbonIntensityModule with diurnal/seasonal CI)
 │
-├── 🐍 ppo_agent.py                       ← PPO implementation
+├──  ppo_agent.py                       ← PPO implementation
 │                                            (Actor-Critic MLP, GAE, RolloutBuffer)
 │
-├── 🐍 train_weight_sweep.py              ← Main training script
+├──  train_weight_sweep.py              ← Main training script
 │                                            (9 configs × 3 seeds = 27 runs)
 │
-├── 📓 analysis_corrected.ipynb           ← Full analysis notebook
+├──  analysis_corrected.ipynb           ← Full analysis notebook
 │                                            (mean±std, Pareto, CI sensitivity, figures)
 │
 ├── data/
@@ -67,7 +67,7 @@ CA-MORL/
 
 ---
 
-## 🔬 Key Results
+##  Key Results
 
 | Policy | Energy (kWh) | Water (L) | Carbon (kgCO₂) | Violations |
 |---|---|---|---|---|
@@ -76,9 +76,9 @@ CA-MORL/
 | Carbon Only | 19456 ± 34 | 13957 ± 22 | 14842 ± 30 | 2015 |
 | Equal (Balanced) | 19451 ± 32 | 133932 ± 162 | 13126 ± 34 | 2001 |
 | Carbon Focused | 2807 ± 13 | 8431 ± 42 | 2022 ± 11 | 0 |
-| **Carbon Heavy ⭐** | **2809 ± 13** | **1683 ± 6** | **1979 ± 9** | **0** |
+| **Carbon Heavy ** | **2809 ± 13** | **1683 ± 6** | **1979 ± 9** | **0** |
 
-> All values are mean ± std across **3 random seeds**. ⭐ = Pareto-optimal best policy.
+> All values are mean ± std across **3 random seeds**.  = Pareto-optimal best policy.
 
 **Key findings:**
 - Carbon Heavy policy achieves **~85.6% energy reduction** and **~98.8% water reduction** vs worst-performing configurations
@@ -87,7 +87,7 @@ CA-MORL/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Step 1 — Clone the repository
 ```bash
@@ -108,7 +108,7 @@ pip install sinergym[extra]
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Run a smoke test (2–3 minutes)
 ```bash
@@ -135,7 +135,7 @@ jupyter notebook analysis_corrected.ipynb
 
 ---
 
-## 🧠 Framework Overview
+##  Framework Overview
 
 ```
 CA-MORL System
@@ -177,7 +177,7 @@ CA-MORL System
 
 ---
 
-## 📊 Weight Configurations
+##  Weight Configurations
 
 | Policy | w_E | w_W | w_C |
 |---|---|---|---|
@@ -193,7 +193,7 @@ CA-MORL System
 
 ---
 
-## 📁 Results and Figures
+##  Results and Figures
 
 <p align="center">
   <img src="figures/fig2_per_seed_scatter.png" width="700" alt="Per-seed scatter"/>
@@ -217,7 +217,7 @@ CA-MORL System
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 1. **Synthetic CI signal** — Training used a synthetic carbon-intensity time-series (CV ≈ 26%). Real ElectricityMap/WattTime data is needed to validate the full temporal adaptation benefit of carbon-aware control.
 2. **Synthetic simulator** — Results use a synthetic physics-based fallback. Full Sinergym/EnergyPlus deployment is left for future work due to compute constraints.
@@ -226,7 +226,7 @@ CA-MORL System
 
 ---
 
-## 🗺️ Future Work
+##  Future Work
 
 - [ ] Integrate real ElectricityMap/WattTime CI data
 - [ ] Full Sinergym/EnergyPlus deployment
@@ -238,7 +238,7 @@ CA-MORL System
 ---
 
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
