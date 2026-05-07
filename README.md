@@ -19,10 +19,6 @@
 This repository contains the official implementation of **CA-MORL**, submitted to **IEEE SPICSCON 2026**.
 
 > **Paper title:** Carbon-Aware Multi-Objective Reinforcement Learning for Sustainable Data Center Cooling Optimization
->
-> **Authors:** Afia Mahpara · Rebeka Sultana Dina 
->
-> **Institution:** Department of Computer Science and Engineering, East West University, Dhaka, Bangladesh
 
 Most existing RL approaches for data center cooling optimize **only for energy**, ignoring carbon emissions and water usage. CA-MORL simultaneously minimizes all three using a **multi-objective PPO** agent with dynamic grid carbon-intensity signals.
 
